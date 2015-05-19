@@ -69,10 +69,10 @@ Vault currently supports the following: Permissions 3, PEX, GroupManager, bPerms
 			<id>bukkit-repo</id>
 			<url>http://repo.bukkit.org/content/groups/public/</url>
 		</repository>
-		<repository>
+		<!-- repository>
 			<id>krinsoft</id>
 			<url>http://files.krinsoft.net:8085/nexus/content/groups/public</url>
-		</repository>
+		</repository-->
 		<repository>
 			<id>escapecraft-repo</id>
 			<url>http://dev.escapecraft.com/maven</url>
@@ -112,12 +112,12 @@ Vault currently supports the following: Permissions 3, PEX, GroupManager, bPerms
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/Minefaconomy.jar</systemPath>
 		</dependency>
-		<dependency>
+		<!-- dependency>
 			<groupId>net.krinsoft</groupId>
 			<artifactId>Privileges</artifactId>
 			<version>1.7.4</version>
 			<optional>true</optional>
-		</dependency>
+		</dependency-->
 		<dependency>
 			<groupId>is.currency</groupId>
 			<artifactId>Currency</artifactId>
