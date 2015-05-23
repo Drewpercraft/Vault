@@ -40,6 +40,7 @@ import net.milkbowl.vault.chat.plugins.Chat_mChatSuite;
 import net.milkbowl.vault.chat.plugins.Chat_rscPermissions;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.plugins.Economy_BOSE7;
+import net.milkbowl.vault.economy.plugins.Economy_BlockBank;
 import net.milkbowl.vault.economy.plugins.Economy_CommandsEX;
 import net.milkbowl.vault.economy.plugins.Economy_Craftconomy3;
 import net.milkbowl.vault.economy.plugins.Economy_CurrencyCore;
@@ -304,6 +305,9 @@ public class Vault extends JavaPlugin {
 
         // Try to load DigiCoin
         hookEconomy("DigiCoin", Economy_DigiCoin.class, ServicePriority.Normal, "co.uk.silvania.cities.digicoin.DigiCoin");
+        
+        // Try to load BlockBank
+        hookEconomy("BlockBank", Economy_BlockBank.class, ServicePriority.Normal, "com.drewpercraft.blockbank.BlockBank");
     }
 
     /**
